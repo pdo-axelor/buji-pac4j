@@ -86,6 +86,7 @@
     <pac4j.version>6.1.0</pac4j.version>
     <java.version>17</java.version>
     <shiro.version>2.0.2</shiro.version>
+    <shiro.classifier>jakarta</shiro.classifier>
     <pmdVersion>6.55.0</pmdVersion>
   </properties>
 
@@ -94,10 +95,11 @@
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-web</artifactId>
       <version>${shiro.version}</version>
+      <classifier>${shiro.classifier}</classifier>
     </dependency>
     <dependency>
       <groupId>org.pac4j</groupId>
-      <artifactId>pac4j-javaee</artifactId>
+      <artifactId>pac4j-jakartaee</artifactId>
       <version>${pac4j.version}</version>
     </dependency>
     <dependency>
